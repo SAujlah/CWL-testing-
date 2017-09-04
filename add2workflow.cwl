@@ -7,13 +7,13 @@ inputs:
 outputs:
     monitor_value:
     type: File
-    outputSource: "#addorsubtract/result"
+    outputSource: addorsubtract/result
 steps: 
     addorsubtract:
     run: addorsubtract.cwl
     inputs: 
         one:
-        source: "#constant"
+        source: constant
         two:
-        source: "#constant2"
+        source: constant2
     outputs: [result]
